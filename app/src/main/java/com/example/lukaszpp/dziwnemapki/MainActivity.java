@@ -88,7 +88,7 @@ public class MainActivity extends ActionBarActivity implements
                  */
                 if(null == googleMap) {
                     Toast.makeText(getApplicationContext(),
-                            "Error creating map", Toast.LENGTH_SHORT).show();
+                            "Błąd tworzenia mapy", Toast.LENGTH_SHORT).show();
                 }
             }
         } catch (NullPointerException exception){
@@ -104,16 +104,16 @@ public class MainActivity extends ActionBarActivity implements
 
         try {
             mojMarker = googleMap.addMarker(new MarkerOptions()
-                    .position(new LatLng(15, 10))
+                    .position(new LatLng(0, 0))
                     .title("Marker")
                     .draggable(true));
 
 
-            Log.i("GoogleMapActivity", "onMarkerCreate");
+            Log.i("GoogleMapActivity", "Marker Stworzony");
         }
         catch(Exception e){
             e.printStackTrace();
-            Log.i("GoogleMapActivity", "markerFailed");
+            Log.i("GoogleMapActivity", "Błąd markera");
         }
     }
 
@@ -143,10 +143,10 @@ public class MainActivity extends ActionBarActivity implements
                 dout.close();
                 output.close();
 
-                Log.d(TAG, "Position saved");
+                Log.d(TAG, "Pozycja zapiana");
             }
             catch(Exception e){
-                Log.d(TAG, "Position not saved");
+                Log.d(TAG, "Pozycja nie zapisana");
                 e.printStackTrace();
             }
 

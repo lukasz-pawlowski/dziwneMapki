@@ -3,9 +3,9 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="zapiszPozycje">Zapisz Pozycję</string>
-    <string name="przegladajPozycje">Przeglądaj Pozycje</string>
+    <string name="zapiszPozycje">Zapisz</string>
+    <string name="przegladajPozycje">Przeglądaj</string>
     <string name="title_activity_przegladaj_pozycje">przegladajPozycje</string>
-    <string name="podajPozycje">Wybierz Pozycję</string>
-    <string name="czytajPozycje">Czytaj Pozycję</string>
+    <string name="podajPozycje">Wybierz</string>
+    <string name="czytajPozycje">Czytaj</string>
 </resources>
